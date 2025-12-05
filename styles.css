@@ -7,12 +7,12 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    color: #333;
+    color: #332f57d3;
     background-color: #f9f5f0; 
 }
 
 header {
-    background-color: #3e2723; 
+    background-color: #3c405f; 
     color: white;
     padding: 1.5rem 2rem;
     display: flex;
@@ -53,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #5d4037;
+    background-color: #2d3d61b2;
     color: white;
     transform: translateY(-2px);
 }
