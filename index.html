@@ -5,121 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coffee</title>
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <p>revo</p>
-            <h3>Ваш любимый кофе</h3>
-            <img src="assets/icons/Banner.png"  width=500px" height="500px">
+    <header class="header">
+        <div class="header__brand">
+            <p class="header__logo">revo</p>
+            <h3 class="header__slogan">Ваш любимый кофе</h3>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#main">Главная страница</a></li>
-                <li><a href="#coffee">Наш кофе</a></li>
-                <li><a href="#shop">Магазин</a></li>
-                <li><a href="#gifts">Подарки</a></li>
-                <li><a href="#combo">Комбо</a></li>
+        <img src="assets/icons/Banner.png" alt="Баннер кофе" class="header__banner">
+
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="#main" class="header__nav-link">Главная страница</a></li>
+                <li><a href="#coffee" class="header__nav-link">Наш кофе</a></li>
+                <li><a href="#shop" class="header__nav-link">Магазин</a></li>
+                <li><a href="#gifts" class="header__nav-link">Подарки</a></li>
+                <li><a href="#combo" class="header__nav-link">Комбо</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="main">
+    <main class="main">
+        <section id="main" class="section">
             <p>Главная страница</p>
         </section>
-        <section id="coffee">
-            <h2>Ваш персональный кофе</h2>
-            <h3>КОФЕ,КОТОРЫЙ ДЕЛАЕТ ВАШ ДЕНЬ ЛУЧШЕ</h3>
-            <div>
-            <img src="assets/icons/ic.png" alt="магазин" width=30px" height="30px">
-            <p><strong>карта наших магазинов</strong></p>
-            <p>приходите в наш магазин и получите дополнительные
-                 подарки при покупке кофе от 1000 руб.</p>
-            </div>
-            <div>
-            <img src="assets/icons/IC1.png" alt="карта" width="30px" height="30px">
-            <p><strong>производство кофе</strong></p>
-            <p>расскажем вам все о наших видах кофе 
-                и о том как мы его производим
-            </p>
-            </div>
-            <div>
-            <img src="assets/icons/IC2.png" alt="производство" width="30px" height="30px">
-            <p><strong>кофе в зернах</strong></p>
-            <p>для ценителей почуствовать 
-                настоящий аромат кофе
-            </p>
-            </div>
-            <div>
-            <img src="assets/icons/IC3.png" alt="" width="30px" height="30px">
-            <p><strong>кофе в капсулах</strong></p>
-            <p>кофе для ценителей разнообразного
-                насыщенного вкуса кофе
-            </p>
+
+        <section id="coffee" class="section">
+            <h2 class="section__title">Ваш персональный кофе</h2>
+            <h3 class="section__subtitle">КОФЕ, КОТОРЫЙ ДЕЛАЕТ ВАШ ДЕНЬ ЛУЧШЕ</h3>
+
+            <div class="features">
+                <div class="feature">
+                    <img src="assets/icons/ic.png" alt="Магазин" class="feature__icon">
+                    <p class="feature__heading">карта наших магазинов</p>
+                    <p class="feature__text">приходите в наш магазин и получите дополнительные подарки при покупке кофе от 1000 руб.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/icons/IC1.png" alt="Карта" class="feature__icon">
+                    <p class="feature__heading">производство кофе</p>
+                    <p class="feature__text">расскажем вам все о наших видах кофе и о том как мы его производим</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/icons/IC2.png" alt="Производство" class="feature__icon">
+                    <p class="feature__heading">кофе в зернах</p>
+                    <p class="feature__text">для ценителей почувствовать настоящий аромат кофе</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/icons/IC3.png" alt="Капсулы" class="feature__icon">
+                    <p class="feature__heading">кофе в капсулах</p>
+                    <p class="feature__text">кофе для ценителей разнообразного насыщенного вкуса кофе</p>
+                </div>
             </div>
         </section>
 
-        <section id="shop">
+        <section id="shop" class="section">
             <p>выберите ваш любимый</p>
-            <h2>САМЫЕ ПОПУЛЯРНЫЕ СОРТА КОФЕ</h2>
+            <h2 class="section__title">САМЫЕ ПОПУЛЯРНЫЕ СОРТА КОФЕ</h2>
             <p>выращенный в дикой природе</p>
-            <p>
-                Из солнечной Бразилии,Мадагаскара и Индонезии.
-            </p>
-            <div>
-            <img src="assets/icons/image1.png"  width=100px" height="100px">
-            <p><strong>1000 руб.</strong></p>
-            <p>Утренее кофе</p>
-            <button>купить</button>
-            </div>
-            <div>
-            <img src="assets/icons/image2.png"  width=100px" height="100px">
-            <p><strong>1300 руб.</strong></p>
-            <p>На каждый день</p>
-            <button>купить</button>
-            </div>
-            <div>
-            <img src="assets/icons/image3.png"  width=100px" height="100px">
-            <p><strong>1200 руб.</strong></p>
-            <p>Уникальное кофе</p>
-            <button>купить</button>
+            <p>Из солнечной Бразилии, Мадагаскара и Индонезии.</p>
+
+            <div class="products">
+                <div class="product">
+                    <img src="assets/icons/image1.png" alt="Утреннее кофе" class="product__image">
+                    <p class="product__price">1000 руб.</p>
+                    <p class="product__name">Утреннее кофе</p>
+                    <button class="product__button">купить</button>
+                </div>
+                <div class="product">
+                    <img src="assets/icons/image2.png" alt="На каждый день" class="product__image">
+                    <p class="product__price">1300 руб.</p>
+                    <p class="product__name">На каждый день</p>
+                    <button class="product__button">купить</button>
+                </div>
+                <div class="product">
+                    <img src="assets/icons/image3.png" alt="Уникальное кофе" class="product__image">
+                    <p class="product__price">1200 руб.</p>
+                    <p class="product__name">Уникальное кофе</p>
+                    <button class="product__button">купить</button>
+                </div>
             </div>
         </section>
 
-        <section id="gifts">
+        <section id="gifts" class="section">
             <p>Выберите лучший подарок для лучшего друга</p>
-            <h2>ПОДАРКИ</h2>
-            <img src="assets/icons/pr.png" width=100px" height="100px">
-            <p>Мадагаскарский кофе</p>
-            <button>купить</button>
+            <h2 class="section__title">ПОДАРКИ</h2>
+            <div class="gift">
+                <img src="assets/icons/pr.png" alt="Мадагаскарский кофе" class="gift__image">
+                <p class="gift__name">Мадагаскарский кофе</p>
+                <button class="gift__button">купить</button>
+            </div>
         </section>
-        <section id="combo">
-            <h2>ваш персональный кофе</h2>
-            <h3>КОМБО КОЛУМБИКА - специально для кофемашин</h3>
-            <div>
-            <img src="assets/icons/image6.png"  width=100px" height="100px">
-            <p><strong>890 руб.</strong></p>
-            <p>Кофе с карамелью</p>
-            <button>купить</button>
+
+        <section id="combo" class="section">
+            <h2 class="section__title">ваш персональный кофе</h2>
+            <h3 class="section__subtitle">КОМБО КОЛУМБИКА - специально для кофемашин</h3>
+            <div class="combo">
+                <div class="combo-item">
+                    <img src="assets/icons/image6.png" alt="Кофе с карамелью" class="combo-item__image">
+                    <p class="combo-item__price">890 руб.</p>
+                    <p class="combo-item__name">Кофе с карамелью</p>
+                    <button class="combo-item__button">купить</button>
+                </div>
+                <div class="combo-item">
+                    <img src="assets/icons/image7.png" alt="Латте" class="combo-item__image">
+                    <p class="combo-item__price">920 руб.</p>
+                    <p class="combo-item__name">Латте</p>
+                    <button class="combo-item__button">купить</button>
+                </div>
+                <div class="combo-item">
+                    <img src="assets/icons/image8.png" alt="Капучино" class="combo-item__image">
+                    <p class="combo-item__price">790 руб.</p>
+                    <p class="combo-item__name">Капучино</p>
+                    <button class="combo-item__button">купить</button>
+                </div>
             </div>
-            <div>
-            <img src="assets/icons/image7.png"  width=100px" height="100px">
-            <p><strong>920 руб.</strong></p>
-            <p>Латте</p>
-            <button>купить</button>
-            </div>
-            <div>
-            <img src="assets/icons/image8.png"  width=100px" height="100px">
-            <p><strong>790 руб.</strong></p>
-            <p>Капучино</p>
-            <button>купить</button>
-            </div>
-            </section>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 revo. Все права защищены.</p>
     </footer>
 </body>
