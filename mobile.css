@@ -1,0 +1,187 @@
+
+/* Планшет */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .header__nav-list {
+    gap: 1.25rem;
+  }
+}
+
+/* Планшет и мобильные */
+@media (max-width: 768px) {
+  /* Гамбургер меню */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Основная навигация  */
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 30px 30px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .header__nav.active {
+    right: 0;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header__nav-item {
+    width: 100%;
+  }
+
+  .header__nav-link {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header__nav-link:hover,
+  .header__nav-link.active {
+    background: transparent;
+    color: #2c5530;
+    padding-left: 10px;
+  }
+
+  /* Затемнение фона при открытом меню */
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .nav-overlay.active {
+    display: block;
+  }
+
+  .btn {
+    min-width: 120px;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .scroll-top {
+    width: 52px;
+    height: 52px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+  }
+}
+
+/* Мобильные */
+@media (max-width: 480px) {
+  .header__nav {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .header__brand {
+    flex: 1 1 60%;
+  }
+
+  .header__banner {
+    display: none;
+  }
+
+  .header__logo {
+    font-size: 1.4rem;
+  }
+
+  .header__slogan {
+    font-size: 0.8rem;
+  }
+
+  .section__title {
+    font-size: 1.4rem;
+  }
+
+  .section__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .features,
+  .products,
+  .combo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product,
+  .combo-item,
+  .feature,
+  .gift {
+    padding: 1rem;
+  }
+
+  .product__button,
+  .combo-item__button,
+  .gift__button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/*Очень маленькие экраны*/ 
+@media (max-width: 360px) {
+  .header__logo {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 1rem 0.75rem;
+  }
+
+  .section__title {
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 10px 8px;
+  }
+}
