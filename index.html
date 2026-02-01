@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 </head>
 
 <body>
@@ -19,25 +20,31 @@
         </div>
         <img src="assets/icons/Banner.png" alt="Баннер кофе" class="header__banner">
 
-        <nav class="header__nav">
-    <ul class="header__nav-list">
-    <li class="header__nav-item">
-      <a href="#main" class="header__nav-link">Главная страница</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="#coffee" class="header__nav-link">Наш кофе</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="#shop" class="header__nav-link">Магазин</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="#gifts" class="header__nav-link">Подарки</a>
-    </li>
-    <li class="header__nav-item">
-      <a href="#combo" class="header__nav-link">Комбо</a>
-    </li>
-  </ul>
-</nav>
+        <nav class="header__nav" id="mainNav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#main" class="header__nav-link">Главная страница</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#coffee" class="header__nav-link">Наш кофе</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#shop" class="header__nav-link">Магазин</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#gifts" class="header__nav-link">Подарки</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#combo" class="header__nav-link">Комбо</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+        </button>
     </header>
 
     <main class="main">
@@ -140,5 +147,9 @@
     <footer class="footer">
         <p>&copy; 2025 revo. Все права защищены.</p>
     </footer>
+    
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+    
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
