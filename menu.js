@@ -54,9 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Кнопка "Наверх"
-        // Кнопка "Наверх"
     if (scrollTopButton) {
-        // Показываем кнопку после скролла
+    
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 scrollTopButton.classList.add('visible');
@@ -72,52 +71,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
         });
-    
     }
-
-    // Дополнительный feedback при нажатии на кнопки покупки
-    const buyButtons = document.querySelectorAll('.product__button, .combo-item__button, .gift__button');
-    buyButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Визуальный feedback
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1.05)';
-            }, 100);
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 200);
-
-            // Можно добавить уведомление о добавлении в корзину
-            const productName = this.closest('.product, .combo-item, .gift')
-                ?.querySelector('.product__name, .combo-item__name, .gift__name')
-                ?.textContent || 'товар';
-            
-            console.log(`Добавлен в корзину: ${productName}`);
-        });
-    });
-
-    // Анимация появления элементов при скролле
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Наблюдаем за элементами
-    const animatedElements = document.querySelectorAll('.feature, .product, .combo-item, .gift');
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(el);
-    });
 });

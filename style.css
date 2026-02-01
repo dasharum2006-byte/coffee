@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
@@ -359,4 +360,16 @@ body {
     padding: 0.75rem 1rem;
     font-size: 0.9rem;
   }
+}
+/* Feedback при нажатии */
+.product__button:active,
+.combo-item__button:active,
+.gift__button:active {
+    transform: scale(0.95);
+}
+
+.feature:active,
+.product:active,
+.combo-item:active {
+    transform: scale(0.98);
 }
