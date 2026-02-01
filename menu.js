@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Кнопка "Наверх"
+        // Кнопка "Наверх"
     if (scrollTopButton) {
         // Показываем кнопку после скролла
         window.addEventListener('scroll', () => {
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
         });
+    
     }
 
     // Дополнительный feedback при нажатии на кнопки покупки
